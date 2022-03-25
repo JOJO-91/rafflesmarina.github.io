@@ -1,0 +1,317 @@
+body, html {
+    height: 100%;
+	margin: 0px;
+	scroll-behavior: smooth;
+	 width: 100%;
+    padding: 0px;
+    overflow-x: hidden; 
+
+}
+
+@font-face
+{
+	font-family:'ProximaNovaB';
+	src:url("ProximaNovaB.otf");
+	
+}
+
+@font-face
+{
+	font-family:'ProximaNovaS';
+	src:url("ProximaNovaS.otf");
+	
+}
+
+@font-face
+{
+	font-family:'ProximaNova';
+	src:url("ProximaNova.otf");
+	
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+
+
+.icon{
+	width:1400px;
+	margin: 0 auto ;
+	top: 3%;
+    left: 0;
+    right: 0 ;
+	position:fixed; 
+	z-index: 1;
+
+}
+
+.navigation{
+	top:9%;
+	padding:0px;
+    left: 0;
+    right: 0;
+	margin: 0 auto ;
+	position:fixed; 
+	z-index: 1;
+	width:85%;
+	display:flex;
+	column-gap:5%;
+	
+}
+.navigation a {color: white;text-decoration: none;transition: transform .5s;}
+.navigation a.active {color: white;text-decoration: none;}
+
+.nav1:hover {transform: scale(1.1);}
+.nav2:hover {transform: scale(1.1);}
+.nav3:hover {transform: scale(1.1);}
+.nav4:hover {transform: scale(1.1);}
+.nav5:hover {transform: scale(1.1);}
+
+
+.nav1{ display:inline-block;width:20%;text-align: center;font-family:'ProximaNovaS';font-size:20px;color:white ;text-shadow: 2px 2px 4px black;}
+.nav2{display:inline-block;width:20%;text-align: center;font-family:'ProximaNovaS';font-size:20px;color:white ;text-shadow: 2px 2px 4px black;}
+.nav3{display:inline-block;width:20%;text-align: center;font-family:'ProximaNovaS';font-size:20px;color:white ;text-shadow: 2px 2px 4px black;}
+.nav4{display:inline-block;width:20%;text-align: center;font-family:'ProximaNovaS';font-size:20px;color:white ;text-shadow: 2px 2px 4px black;}
+.nav5{display:inline-block;width:20%;text-align: center;font-family:'ProximaNovaS';font-size:20px;color:white ;text-shadow: 2px 2px 4px black;}
+
+
+/* ------------------------Hero page ------------------------ */
+
+.firstcontainer{background-image:url("mainpage.jpg");background-size: cover;background-repeat:no-repeat;height:100%;background-position:center;position:relative;opacity:0.85;}
+
+.heroimage{position: absolute;top: 50%;left: 0;right: 0;margin:0 auto;}
+
+
+.herosubtext{font-family:'ProximaNovaS'; font-size:30px;-webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black; color:#b38f00;animation: flicker 1.5s infinite alternate; text-shadow:color: #FED128;
+}
+.waviy{font-family:'ProximaNovaS';font-size:70px;color:white; text-shadow: 2px 3px 5px black}
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+.heroparagraph{font-family:'ProximaNova';font-size:25px; width:460px; margin:0 auto; padding-top:0.5px;line-height 0.3rem; -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black; color:#b38f00;text-shadow:color: #FED128;}
+
+
+/* ------------------------ THE Lighthouse (ABOUT) ------------------------ */
+
+
+.secondcontainer{
+	
+	margin-left: auto;
+	margin-right:auto;
+	background-position: center;
+    position:relative; 
+	margin-top:0px;
+	margin-bottom:0px;
+	background-color:rgba(43, 101, 236,0.4);
+	
+
+	
+}
+
+.aboutbox {display:flex; column-gap: 3%; width:80%;margin:0 auto ;padding-top:150px; }
+.aboutimage { width: 60%; }
+.aboutinformation {width: 37%; margin:auto 0;}
+.image1 { width: 100%; height:600px;object-fit: cover;object-position:bottom; }
+
+.aboutsubtitle{font-family:'ProximaNova'; font-size:15px;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black; color:#b38f00;text-transform:uppercase;}
+.abouttitle{font-family:'ProximaNovaS';font-size:52px;color:white;text-shadow: 2px 2px 4px black;}
+.abouttime{font-family:'ProximaNovaS';font-size:30px;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;color:#b38f00;padding-top:20px}
+.aboutparagraph{font-family:'ProximaNova';font-size:18px;color:black;padding-top:5px;line-height:1.2rem}
+.aboutbutton{width:35%;height:50px;background-color:#b38f00; margin-top:15px; text-decoration: none;border: none;
+  color: white;font-family:'ProximaNovaS';font-size:15px;}
+
+.aboutbutton a {color: white;text-decoration: none;transition: transform .5s;}
+.aboutbutton a.active {color: white;text-decoration: none;}
+
+.aboutbox2 {padding-top:30px;display:flex; column-gap:3%; width:80%; margin:0 auto ; }
+.otheraboutimageL { width: 60%;}
+.otheraboutimageR { width: 37%;}
+.image2 { width: 100%; height:500px;object-fit: cover; }
+.image3 { width: 100%;height:500px;object-fit: cover; }
+.aboutparagraph2{font-family:'ProximaNova';font-size:18px;-webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black; color:#b38f00;animation: flicker 1.5s infinite alternate; text-shadow:color: #FED128;padding-top:30px;line-height:1.2rem;width:75%; margin:0 auto; text-align: center}
+
+.divider{width:100%;border-top: 2.5px solid black;margin:0 auto; opacity: 80%}
+
+/* -------------------------THE Club------------------------------- */
+
+
+.thirdcontainer{
+	margin-left: auto;
+	margin-right:auto;
+	background-position: center;
+    position:relative; 
+	margin-top:0px;
+	margin-bottom:0px;
+	background-color:rgba(43, 101, 236,0.4);
+}
+.clubtitle{font-family:'ProximaNovaS';font-size:52px;color:white;text-shadow: 2px 2px 4px black;text-align: center;padding-top:80px;}
+.clubsubtext{font-family:'ProximaNova';font-size:25px;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;color:#b38f00; padding-top:10px;line-height:2rem; text-align: center;width:30%;margin:0 auto;}
+.clubimage { width: 80%;margin:0 auto;margin-top:25px;}
+.image4 { width: 100%;height:550px;object-fit: cover; }
+
+.clubbox {padding-top:30px;display:flex; column-gap:3%; width:80%; margin:0 auto ; }
+.clubimageL { width: 31.33%;}
+.clubimageM { width: 31.33%;}
+.clubimageR { width: 31.33%;}
+.image5 { width: 100%; height:400px;object-fit: cover; }
+.image6 { width: 100%;height:400px;object-fit: cover; }
+.image7 { width: 100%;height:400px;object-fit: cover; }
+
+.clubparagraph{font-family:'ProximaNova';font-size:18px;color:black; padding-top:30px;line-height:1.2rem;width:75%; margin:0 auto; text-align: center}
+
+
+.buttoncontainer{width:10%;margin:0 auto;}
+.clubbutton{width:100%;height:50px;background-color:#b38f00; text-decoration: none;border: none;
+  color: white;font-family:'ProximaNovaS';font-size:15px;margin-top:15px;}
+.clubbutton a {color: white;text-decoration: none;transition: transform .5s;}
+.clubbutton a.active {color: white;text-decoration: none;}
+
+
+
+/* -----------------------------------------SEAPORT----------------------------------------- */
+
+.fourthcontainer{
+	margin-left: auto;
+	margin-right:auto;
+	background-position: center;
+    position:relative; 
+	margin-top:0px;
+	margin-bottom:0px;
+	background-color:rgba(43, 101, 236,0.4);
+}
+
+.seaporttitle{font-family:'ProximaNovaS';font-size:52px;color:white;text-shadow: 2px 2px 4px black;text-align: center;padding-top:80px;}
+.seaportsubtext{font-family:'ProximaNova';font-size:25px;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;color:#b38f00; padding-top:10px;line-height:2rem; text-align: center;width:40%;margin:0 auto;}
+
+.seaportbox1 {display:flex; column-gap: 5%; width:80%;margin:0 auto ;margin-top:25px; }
+.seaportimage1 { width: 50%;}
+.seaportinformation1 {width: 45%; margin:auto 0;}
+.image8 {  width: 100%;height:450px;object-fit: cover; }
+.seaportsubtitle1{font-family:'ProximaNovaS'; font-size:30px;color:white;text-shadow: 2px 2px 4px black;text-transform:uppercase;font-weight:bold;}
+.seaportparagraph1{font-family:'ProximaNova';font-size:18px;color:black; padding-top:5px;line-height:2rem;width:85%;}
+
+.seaportbutton1{width:35%;height:50px;background-color:#b38f00; margin-top:15px; text-decoration: none;border: none;
+  color: white;font-family:'ProximaNovaS';font-size:15px;}
+.seaportbutton1 a {color: white;text-decoration: none;transition: transform .5s;}
+.seaportbutton1 a.active {color: white;text-decoration: none;}
+
+
+.seaportbox2 {display:flex; column-gap: 5%; width:80%;margin:0 auto ;margin-top:40px; }
+.seaportimage2 { width: 50%;}
+.seaportinformation2 {width: 45%; margin:auto 0;}
+.image9 { width: 100%;height:450px;object-fit: cover; }
+.seaportsubtitle2{font-family:'ProximaNovaS'; font-size:30px;color:white;text-shadow: 2px 2px 4px black;text-transform:uppercase;font-weight:bold;margin-left:10%;}
+.seaportparagraph2{font-family:'ProximaNova';font-size:18px;color:black; padding-top:5px;line-height:2rem;width: 85%;margin-left:10%;}
+
+.seaportbutton2{margin-left:10%;width:35%;height:50px;background-color:#b38f00; margin-top:15px; text-decoration: none;border: none;
+  color: white;font-family:'ProximaNovaS';font-size:15px;}
+.seaportbutton2 a {color: white;text-decoration: none;transition: transform .5s;}
+.seaportbutton2 a.active {color: white;text-decoration: none;}
+
+
+.seaportimage3 { width: 80%;margin:0 auto;padding-top:40px;}
+.image10 { width: 100%;height:600px;object-fit: cover; }
+.seaportsubtitle3{font-family:'ProximaNovaS'; font-size:30px;color:white;text-shadow: 2px 2px 4px black;text-transform:uppercase;font-weight:bold; padding-top:30px;line-height:1.2rem;text-align: center}
+.seaportparagraph3{font-family:'ProximaNova';font-size:18px;color:black; padding-top:5px;line-height:2rem;width:85%; margin:0 auto; text-align: center}
+.seaportbutton3{width:100%;height:50px;background-color:#b38f00; text-decoration: none;border: none;
+  color: white;font-family:'ProximaNovaS';font-size:15px;margin-top:15px;}
+.seaportbutton3 a {color: white;text-decoration: none;transition: transform .5s;}
+.seaportbutton3 a.active {color: white;text-decoration: none;}
+
+/* -----------------------------------------THINGS TO DO----------------------------------------- */
+
+.fifthcontainer{
+	
+	margin-left: auto;
+	margin-right:auto;
+	background-position: center;
+    position:relative; 
+	margin-top:0px;
+	margin-bottom:0px;
+	background-color:rgba(43, 101, 236,0.4);
+}
+
+.thingstodobox1 {display:flex; column-gap: 3%; width:80%;margin:0 auto ;padding-top:80px; }
+.thingstodoimage { width: 60%;}
+.image11 { width: 80%; height:600px ;object-fit: cover; object-position: bottom; }
+.thingstodoinformation {width: 37%; margin:auto 0;}
+.thingstodosubtitle{font-family:'ProximaNovaS'; font-size:18px;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;color:#b38f00;text-transform:uppercase;font-weight:lighter;}
+.thingstodotitle{font-family:'ProximaNovaS';font-size:52px;color:white;text-shadow: 2px 2px 4px black;}
+.thingstodoparagraph{font-family:'ProximaNova';font-size:18px;color:black; padding-top:5px;line-height:1.2rem;width:90%;}
+
+.thingstodobutton{width:35%;height:50px;background-color:#b38f00; margin-top:15px; text-decoration: none;border: none;
+  color: white;font-family:'ProximaNovaS';font-size:15px;}
+.thingstodobutton a {color: white;text-decoration: none;transition: transform .5s;}
+.thingstodobutton a.active {color: white;text-decoration: none;}
+
+
+.thingstodobox2 {padding-top:30px;display:flex; column-gap:3%; width:80%; margin:0 auto ; }
+.thingstodoimageL { width: 60%;}
+.thingstodoimageR { width: 37%;}
+.image12 { width: 100%; height:600px;object-fit: cover;object-position: 10% 100%; }
+.image13 { width: 100%;height:600px;object-fit: cover; }
+.thingstodoparagraph2{font-family:'ProximaNova';font-size:18px;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;color:#b38f00; padding-top:30px;line-height:1.2rem;width:75%; margin:0 auto; text-align: center}
+
+
+/* -----------------------------------------HOW TO GET THERE----------------------------------------- */
+
+.sixthcontainer{
+	
+	margin-left: auto;
+	margin-right:auto;
+	background-position: center;
+    position:relative; 
+	margin-top:0px;
+	margin-bottom:0px;
+	background-color:rgba(43, 101, 236,0.4);
+	
+	
+	}
+
+.gettitle{font-family:'ProximaNovaS';font-size:52px;color:white;text-shadow: 2px 2px 4px black;text-align: center;padding-top:80px;}
+.getsubtext{font-family:'ProximaNova';font-size:25px;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;color:#b38f00; padding-top:10px;line-height:2rem; text-align: center;width:25%;margin:0 auto;}
+
+
+.getbutton{width:100%;height:50px;background-color:#b38f00; text-decoration: none;border: none;
+  color: white;font-family:'ProximaNovaS';font-size:18px;margin-top:30px;margin-bottom:50px;}
+.getbutton a {color: white;text-decoration: none;transition: transform .5s;}
+.getbutton a.active {color: white;text-decoration: none;}
+.waviy2{font-family:'ProximaNovaS';font-size:70px;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;color:#b38f00;text-align: center;padding-top:150px;padding-bottom:150px;}
+.waviy2 {
+  position: relative;
+}
+.waviy2 span {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+.getparagraph{font-family:'ProximaNova';font-size:18px;color:white ;text-shadow: 2px 2px 4px black; padding-top:30px;line-height:1.2rem;width:75%; margin:0 auto; text-align: center}
